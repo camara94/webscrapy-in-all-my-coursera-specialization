@@ -14,14 +14,12 @@ class Certificat(scrapy.Item):
     score: Item()
 
 
-sjhdsdhs
-
-
 class CourseraSpecializationItem(scrapy.Item):
     titre: Item()
     auteur: Item()
     image: Item()
     url: Item()
+    objectif: Item()
     dateObtention: Item()
     description: Item()
     certificats: list()
