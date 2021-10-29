@@ -14,6 +14,9 @@ class Certificat(scrapy.Item):
     score: Item()
 
 
+sjhdsdhs
+
+
 class CourseraSpecializationItem(scrapy.Item):
     titre: Item()
     auteur: Item()
