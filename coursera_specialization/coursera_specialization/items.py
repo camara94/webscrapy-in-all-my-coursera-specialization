@@ -6,20 +6,24 @@
 import scrapy
 
 
-class Certificat(scrapy.Item):
-    nom: Item()
-    universite: Item()
-    enseignant: Item()
-    duree: Item()
-    score: Item()
+class CertificatItem(scrapy.Item):
+    nom: scrapy.Field()
+    universite: scrapy.Field()
+    formateur: scrapy.Field()
+    duree: scrapy.Field()
+    score: scrapy.Field()
+    date_obtention: scrapy.Field()
 
 
 class CourseraSpecializationItem(scrapy.Item):
-    titre: Item()
-    auteur: Item()
-    image: Item()
-    url: Item()
-    objectif: Item()
-    dateObtention: Item()
-    description: Item()
+    titre: scrapy.Field()
+    auteur: scrapy.Field()
+    etudiant: scrapy.Field()
+    image: scrapy.Field()
+    lien: scrapy.Field()
+    duree: scrapy.Field()
+    date_obtention: scrapy.Field()
+    objectif: scrapy.Field()
+    dateObtention: scrapy.Field()
+    description: scrapy.Field()
     certificats: list()
